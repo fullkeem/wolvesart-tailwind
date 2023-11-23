@@ -8,6 +8,7 @@ module.exports = {
         black: "#000000",
         gray: "#484848",
         orange: "#F85430",
+        gray2: "#0F0F12",
       },
       fontFamily: {
         sans: ["Inter", "Space Grotesk"],

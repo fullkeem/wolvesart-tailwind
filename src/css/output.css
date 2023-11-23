@@ -538,28 +538,42 @@ video {
 
 /* Tailwind 유틸리티 클래스와 플러그인에 의해 등록된 모든 유틸리티 클래스를 주입합니다. */
 
-.relative {
-  position: relative;
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flex {
   display: flex;
 }
 
-.h-4 {
-  height: 1rem;
+.h-\[110px\] {
+  height: 110px;
 }
 
 .h-screen {
   height: 100vh;
 }
 
-.w-4 {
-  width: 1rem;
+.w-\[89\.96\%\] {
+  width: 89.96%;
 }
 
-.justify-between {
-  justify-content: space-between;
+.items-center {
+  align-items: center;
+}
+
+.bg-gray2 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 15 18 / var(--tw-bg-opacity));
 }
 
 .bg-black {
