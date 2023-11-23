@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+
 /* Tailwind 기본 스타일과 플러그인에 의해 등록된 모든 기본 스타일을 주입합니다. */
 @tailwind base;
 
@@ -8,6 +10,17 @@
 @tailwind utilities;
 
 /* 사용자 정의 스타일 */
-[hidden] {
-  @apply hidden;
+@layer base {
+  @font-face {
+    font-family: "Migra";
+    font-weight: 800;
+    src: local("Migra"),
+      url("/fonts/Migra/Migra-Extrabold.woff2") format("woff2"),
+      url("/fonts/Migra/Migra-Extrabold.woff") format("woff"),
+      url("/fonts/Migra/Migra-Extrabold.eot") format("opentype");
+  }
+}
+
+.line {
+  @apply text-center text-8xl font-migra;
 }

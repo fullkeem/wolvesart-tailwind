@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+
 /* Tailwind 기본 스타일과 플러그인에 의해 등록된 모든 기본 스타일을 주입합니다. */
 
 /* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
@@ -44,7 +46,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Inter, Space Grotesk;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -434,7 +436,18 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+@font-face {
+  font-family: "Migra";
+
+  font-weight: 800;
+
+  src: local("Migra"),
+      url("/fonts/Migra/Migra-Extrabold.woff2") format("woff2"),
+      url("/fonts/Migra/Migra-Extrabold.woff") format("woff"),
+      url("/fonts/Migra/Migra-Extrabold.eot") format("opentype");
+}
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -484,7 +497,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -538,56 +551,71 @@ video {
 
 /* Tailwind 유틸리티 클래스와 플러그인에 의해 등록된 모든 유틸리티 클래스를 주입합니다. */
 
-.float-right {
+.float-right{
   float: right;
 }
 
-.float-left {
+.float-left{
   float: left;
 }
 
-.mx-auto {
+.mx-auto{
   margin-left: auto;
   margin-right: auto;
 }
 
-.flex {
+.flex{
   display: flex;
 }
 
-.h-\[110px\] {
+.h-\[110px\]{
   height: 110px;
 }
 
-.h-screen {
+.h-\[38rem\]{
+  height: 38rem;
+}
+
+.h-screen{
   height: 100vh;
 }
 
-.w-\[89\.96\%\] {
+.w-\[89\.96\%\]{
   width: 89.96%;
 }
 
-.items-center {
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
   align-items: center;
 }
 
-.bg-gray2 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 15 18 / var(--tw-bg-opacity));
+.justify-center{
+  justify-content: center;
 }
 
-.bg-black {
+.bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.text-white {
+.bg-gray2{
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 15 18 / var(--tw-bg-opacity));
+}
+
+.text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 /* 사용자 정의 스타일 */
 
-[hidden] {
-  display: none;
+.line{
+  text-align: center;
+  font-family: Migra;
+  font-size: 6rem;
+  line-height: 1;
 }

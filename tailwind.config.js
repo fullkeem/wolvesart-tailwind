@@ -11,7 +11,8 @@ module.exports = {
         gray2: "#0F0F12",
       },
       fontFamily: {
-        sans: ["Inter", "Space Grotesk"],
+        inter: ["inter", "sans-serif"],
+        migra: ["Migra"],
       },
     },
   },
