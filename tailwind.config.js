@@ -13,6 +13,10 @@ module.exports = {
       fontFamily: {
         inter: ["inter", "sans-serif"],
         migra: ["Migra"],
+        spaceGrotesk: ["Space Grotesk", "sans-serif"],
+      },
+      content: {
+        starIcon: 'url("/images/icon/star-outline.svg")',
       },
     },
   },
