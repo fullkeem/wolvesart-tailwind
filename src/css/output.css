@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+
 /* Tailwind 기본 스타일과 플러그인에 의해 등록된 모든 기본 스타일을 주입합니다. */
 
 /* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
@@ -576,6 +578,10 @@ video {
   margin-right: auto;
 }
 
+.mt-\[6\.25em\]{
+  margin-top: 6.25em;
+}
+
 .flex{
   display: flex;
 }
@@ -588,12 +594,12 @@ video {
   height: 38rem;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
 .w-\[89\.96\%\]{
   width: 89.96%;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .flex-col{
@@ -606,6 +612,10 @@ video {
 
 .justify-center{
   justify-content: center;
+}
+
+.gap-5{
+  gap: 1.25rem;
 }
 
 .bg-black{
@@ -630,4 +640,13 @@ video {
   font-family: Migra;
   font-size: 6rem;
   line-height: 1;
+}
+
+.marquee__item-1 > li{
+  display: inline;
+}
+
+.marquee__item-1 > li::after{
+  --tw-content: url("/images/icon/star-outline.svg");
+  content: var(--tw-content);
 }
