@@ -594,10 +594,6 @@ video {
   height: 38rem;
 }
 
-.w-\[200\%\]{
-  width: 200%;
-}
-
 .w-\[89\.96\%\]{
   width: 89.96%;
 }
@@ -616,10 +612,6 @@ video {
 
 .gap-5{
   gap: 1.25rem;
-}
-
-.overflow-hidden{
-  overflow: hidden;
 }
 
 .bg-black{
@@ -652,11 +644,41 @@ video {
   white-space: nowrap;
 }
 
-.marquee__item{
+.marquee__item-1,
+.marquee__item-2{
   display: inline-block;
 }
 
-.marquee__item > li{
+@keyframes marquee{
+  0%{
+    transform: translateX(0);
+  }
+
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
+.marquee__item-1{
+  animation: marquee 100s linear infinite;
+}
+
+@keyframes marquee2{
+  0%{
+    transform: translateX(-100%);
+  }
+
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.marquee__item-2{
+  animation: marquee2 100s linear infinite;
+}
+
+.marquee__item-1 > li,
+.marquee__item-2 > li{
   display: inline-block;
   font-family: Space Grotesk, sans-serif;
   font-size: 3.375em;
@@ -664,7 +686,8 @@ video {
   color: rgb(72 72 72 / var(--tw-text-opacity));
 }
 
-.marquee__item > li::after{
+.marquee__item-1 > li::after,
+.marquee__item-2 > li::after{
   margin-left: 2rem;
   margin-right: 2rem;
   --tw-content: url("/images/icon/star-outline.svg");

@@ -29,19 +29,20 @@
   @apply w-[100%] overflow-hidden whitespace-nowrap;
 }
 
-@keyframes marquee {
-  to {
-    transform: translateX(100%);
-  }
-  from {
-    transform: translateX(-100%);
-  }
+.marquee__item-1,
+.marquee__item-2 {
+  @apply inline-block;
 }
 
-.marquee__item {
-  @apply animation: marquee 150s linear infinite;
+.marquee__item-1 {
+  @apply animate-marquee;
 }
 
-.marquee__item > li {
+.marquee__item-2 {
+  @apply animate-marquee2;
+}
+
+.marquee__item-1 > li,
+.marquee__item-2 > li {
   @apply inline-block font-spaceGrotesk text-[3.375em] text-gray after:mx-8 after:content-starIcon;
 }
