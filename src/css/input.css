@@ -25,6 +25,23 @@
   @apply text-center text-8xl font-migra;
 }
 
-.marquee__item-1 > li {
-  @apply inline after:content-starIcon;
+.marquee__box {
+  @apply w-[100%] overflow-hidden whitespace-nowrap;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(100%);
+  }
+  from {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee__item {
+  @apply animation: marquee 150s linear infinite;
+}
+
+.marquee__item > li {
+  @apply inline-block font-spaceGrotesk text-[3.375em] text-gray after:mx-8 after:content-starIcon;
 }
