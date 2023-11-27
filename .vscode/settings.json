@@ -9,5 +9,9 @@
   },
   "tailwindCSS.includeLanguages": {
     "plaintext": "html"
+  },
+  "editor.tokenColorCustomizations": {
+    "comments": "",
+    "textMateRules": []
   }
 }
